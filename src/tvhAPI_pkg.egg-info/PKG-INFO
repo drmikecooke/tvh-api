@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tvhAPI-pkg
+Version: 0
+Summary: Various apps using TVH api
+Author-email: Mike Cooke <drmikecooke@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: rpi OS
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tvh-api
+
+Collecting some simple python interactions with the tvheadend api.

@@ -1,0 +1,4 @@
+[console_scripts]
+tvh-epg = tvhAPI_pkg.epg:main
+tvh-set = tvhAPI_pkg.set:addTVH
+tvh-state = tvhAPI_pkg.state:main

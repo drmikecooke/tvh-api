@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tvhAPI_pkg"
+version = "0"
+authors = [
+  { name="Mike Cooke", email="drmikecooke@gmail.com" },
+]
+description = "Various apps using TVH api"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: rpi OS",
+]
+dependencies =["requests"]
+
+[tool.setuptools]
+# ...
+# By default, include-package-data is true in pyproject.toml, so you do
+# NOT have to specify this line.
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+tvh-epg = "tvhAPI_pkg.epg:main"
+tvh-state = "tvhAPI_pkg.state:main"
+tvh-set = "tvhAPI_pkg.set:addTVH"
