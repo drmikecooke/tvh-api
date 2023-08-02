@@ -1,4 +1,5 @@
 from pathlib import Path
+from getpass import getpass
 
 comment="# TVH data"
 bashrcp=Path.home()/".bashrc"
@@ -10,6 +11,6 @@ def addTVH():
 		ti=bl.index(comment)
 		bl.pop(ti)
 		bl.pop(ti)
-	bl+=[comment,f'export TVH="{input("user: ")}:{input("pwd: ")}"']
+	bl+=[comment,f'export TVH="{input("user: ")}:{getpass("pwd: ")}"']
 	with open(bashrcp,"wt") as bashrc:
 		bashrc.write('\n'.join(bl))
