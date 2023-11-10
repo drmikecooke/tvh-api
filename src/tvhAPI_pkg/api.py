@@ -38,7 +38,7 @@ def inputs(tvh):
 def nxt(tvh):
     gd=getAPI(tvh,"dvr/entry/grid_upcoming")
     if gd['total']>40:
-        print(f'Check all entries for {ip}\n')
+        print(f'Check all entries for {tvh}\n')
     starts=[item['start_real'] for item in gd['entries']]
     stops=[item['stop_real'] for item in gd['entries']]
     if starts:
